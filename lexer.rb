@@ -60,7 +60,7 @@ module Lexer
 end
 
 RSpec.describe Lexer do
-    it 'gives the right tokens' do
+    it 'returns the right tokens' do
         l = Lexer.Lexr.new('{}();-+=')
         correct = Token.token.new(Token::LBRACE, self.ch)
         expect(Lexer.Lexr.next_token).to eq()
